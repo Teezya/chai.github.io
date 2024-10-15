@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайный мир</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #b1b1b1;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #77664e;
+            height: 100px;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .con1 { background-color: #e2b16b; }
+        .con2 { background-color: #9b6c2b; }
+        .con3 { background-color: #ffb958; }
+        .con4 { background-color: #9b6c2b; }
+        .con5 { display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #e2b16b; }
+        .con6 { background-color: #9b6c2b; }
+        .con7 { background-color: #e2b16b; }
+
+        h1, h2 {
+            color: #d8e733;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Изменил для адаптивности */
+        }
+
+        p {
+            color: #d8e733;
+            margin: 10px 0;
+            font-size: 1.1em; /* Изменил для адаптивности */
+        }
+
+        a.learn-more, a.knop, a.kno {
+            background-color: #d8e733;
+            color: #77664e;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em; /* Изменил для адаптивности */
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .video-container {
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Email {
+            border: 5px solid rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: transparent;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .footer-icons img {
+            padding: 10px;
+            height: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2em; /* Адаптивный размер шрифта */
+            }
+
+            p {
+                font-size: 1em; /* Адаптивный размер шрифта */
+            }
+
+            .con5 {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Адаптивный размер шрифта */
+            }
+
+            p {
+                font-size: 0.9em; /* Адаптивный размер шрифта */
+            }
+
+            .Email {
+                width: 90%;
+            }
+
+            .footer-icons img {
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#">
+        <img src="nav.png" alt="Навигация" style="height: 60px;">
+    </a>
+    <img src="lupa.png" alt="Поиск" style="height: 60px;">
+</header>
+
+<div class="con1 section">
+    <h1>A Taste of Wonder: <br> Ciel's Tea Shop</h1>
+    <p>MADE LOCAL - 09.28</p>
+    <a href="#" class="learn-more">LEARN MORE</a>
+</div>
+
+<div class="con2 section">
+    <h1>WHAT WE DO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Aut iste dolore numquam obcaecati magnam autem asperiores amet.<br>
+        Sequi ad quam quo ut assumenda, fugit placeat necessitatibus quibusdam modi tenetur beatae?</p>
+    <a href="#" class="knop">LEARN MORE</a>
+    <div class="video-container">
+        <video controls>
+            <source src="mixkit-brewing-hot-fruit-tea-22268-hd-ready.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<div class="con3 section">
+    <h1>New Arrival <br> Relaxing Tea</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum cum alias autem eligendi harum? <br>
+        In minus beatae quae alias natus, explicabo eum? Mollitia cupiditate eos modi, quis maiores voluptatum harum.</p>
+    <img src="con3.png" alt="New Arrival Tea">
+</div>
+
+<div class="con4 section">
+    <h1>Green Tea</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum cum alias autem eligendi harum? <br>
+        In minus beatae quae alias natus, explicabo eum? Mollitia cupiditate eos modi, quis maiores voluptatum.</p>
+    <div style="display: flex; justify-content: center;">
+        <img src="con41.png" alt="Green Tea 1" style="margin: 0 10px;">
+        <img src="con42.png" alt="Green Tea 2" style="margin: 0 10px;">
+    </div>
+</div>
+
+<div class="con5 section">
+    <img src="con51.png" alt="Tea 1" style="width: 45%; max-width: 500px;">
+    <img src="con52.png" alt="Tea 2" style="width: 45%; max-width: 500px;">
+</div>
+
+<div class="con6 section">
+    <h1>Testimonials</h1>
+    <div class="t1">
+        <h2>MONICA TSUOIY</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti quisquam rem, <br>
+            voluptates animi consequatur. Illo blanditiis accusantium omnis, deleniti quae <br>
+            saepe nam quasi quidem nulla recusandae, dicta commodi molestiae?</p>
+    </div>
+    <div class="t2">
+        <h2>MONICA TSUOIY</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti quisquam rem, <br>
+            voluptates animi consequatur. Illo blanditiis accusantium omnis, deleniti quae <br>
+            saepe nam quasi quidem nulla recusandae, dicta commodi molestiae?</p>
+    </div>
+</div>
+
+<div class="con7 section">
+    <h1>Join the Newsletter</h1>
+    <div class="Email">
+        <input type="email" placeholder="Enter your email" style="width: 100%; padding: 10px;">
+        <a href="#" class="kno">SEND</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-icons">
+        <img src="facebook.png" alt="Facebook">
+        <img src="instagram.png" alt="Instagram">
+        <img src="twitter.png" alt="Twitter">
+    </div>
+    <p>Чайный мир &copy; 2023</p>
+</footer>
+
+</body>
+</html>
